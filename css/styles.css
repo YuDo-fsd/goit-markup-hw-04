@@ -164,6 +164,7 @@ img {
 .hero {
   padding: 200px 0;
   max-width: 1600px;
+  height: 600px;
   margin: auto;
   background-color: var(--secondary-bg-color);
   text-align: center;
@@ -217,19 +218,21 @@ img {
   padding-bottom: 0;
 }
 
-.benefits-order,
-.icon-benefits {
+.benefits-order {
   display: flex;
   gap: 30px;
 }
 
 .benefits-thumb {
-  padding: 25px 100px;
+  display: flex;
   width: 270px;
+  height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  text-align: center;
+  align-items: center;
   justify-content: center;
+
+  border-radius: 4px;
 }
 
 .benefits-list {
@@ -301,35 +304,35 @@ img {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .team-social {
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
 .social-links {
-  margin: 16px auto 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   background-color: var(--primary-white-color);
+  color: #afb1b8;
   border-radius: 50%;
 }
 
 .team-icons {
-  fill:#afb1b8;
+  fill: currentColor;
 }
 
-.social-links:hover {
+.social-links:hover,
+.social-links:focus {
   background-color: var(--accent-color);
-}
-
-.social-links:hover .team-icons {
-  fill: var(--primary-white-color)
+  color: var(--primary-white-color);
 }
 
 /* OUR CLIENTS */
@@ -338,23 +341,23 @@ img {
   display: flex;
   gap: 30px;
 }
-.clients-link:focus,
-.clients-link:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-}
 
 .clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor;
   border-radius: 4px;
   color: #afb1b8;
 
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link:focus,
+.clients-link:hover {
+  color: var(--accent-color);
 }
 
 .icon-clients {
@@ -413,10 +416,14 @@ img {
   flex-wrap: wrap;
 }
 
-.card:hover {
+.card-link {
+  display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
 
 .card-content {
@@ -492,17 +499,17 @@ img {
 }
 
 .footer-list {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
 .footer-icons {
-  fill: var(--primary-white-color)
+  fill: var(--primary-white-color);
 }
 
 .footer-social a {
-  margin-top: 20px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
