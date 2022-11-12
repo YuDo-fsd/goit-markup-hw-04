@@ -105,15 +105,15 @@ img {
   color: var(--accent-color);
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-
 .nav-link {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: calc(16 / 14);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
 }
 
 .contact-container {
@@ -127,22 +127,25 @@ img {
   margin-left: auto;
 }
 
-.contact-list a {
-  padding: 28px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .icon-contact {
   margin-right: 10px;
   fill: currentColor;
 }
 
 .contact-link {
+  padding: 28px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: var(--contacts-color);
   font-weight: 500;
   line-height: calc(24 / 14);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
 }
 
 .logo {
@@ -287,6 +290,7 @@ img {
 
 .team-info {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -308,7 +312,6 @@ img {
 }
 
 .team-social {
-  padding-bottom: 30px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -484,9 +487,19 @@ img {
   line-height: calc(24 / 14);
 }
 
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
+}
+
 .adress-link {
   color: var(--primary-white-color);
   line-height: calc(24 / 14);
+}
+
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--accent-color);
 }
 
 .footer-text {
